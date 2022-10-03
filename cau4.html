@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="hinhchunhat" width="500" height="600"></canvas>
+<script>
+    class Rectangle{
+        x;
+        y;
+        width;
+        height;
+        color;
+        constructor(x,y,width,height,color) {
+            this.color =color;
+            this.x=x;
+            this.y=y;
+            this.height=height;
+            this.width=width;
+        }
+        render(canvas){
+        }
+    }
+    var canvas = document.getElementById("hinhchunhat");
+    if (canvas.getContext)
+    {
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle='pink';
+        var y=40, height=500, width=260, x=100;
+            ctx.fillRect(x, y, height, width);
+    }
+</script>
+</body>
+</html>
